@@ -1,0 +1,143 @@
+body {
+    background-color: blanchedalmond;
+    font-size: 2em;
+    border: 2px blue solid;
+}
+
+div{
+    border-style: solid;
+    border-top-width: 1px;
+    border-color: blueviolet;
+}
+
+/*Selector por id - primario de especificidad 1*/
+
+#item1 {
+    color: brown;
+    background-color: aqua;
+}
+
+#item2 {
+    color: cyan;
+}
+
+/*Selector por clase - secundario de especificidad 2*/
+
+.item {
+    color: blue;
+    background-color: aquamarine;
+}
+
+/*Selector or tipo de elemento - terciario de especificidad 3*/
+
+li {
+    color: darkslategray;
+}
+
+/*selector por atributo*/
+
+[action] {
+    color: darkblue;
+    background-color: darkorange;
+}
+
+/*Mas filtrado por atributo*/
+/*Selector por atributo que empieza con val...*/
+
+[action^="val"] {
+    color: darkmagenta;
+}
+
+/*Selector por atributo que contiene alo...*/
+
+[action*="alo"] {
+    color: darksalmon;
+}
+
+/*Selector por atributo que termina con lor...*/
+
+[action$="lor"] {
+    color: firebrick;
+}
+
+/*Selector multiple*/
+main ul .item #main1 {
+    color: black;
+}
+
+/*Selector por PSEUDOCLASES ... por numero de item...*/
+
+p:nth-child(1) {
+    color: yellow;
+    background-color: red;
+}
+
+p:nth-child(2) {
+    color: red;
+}
+
+p:nth-child(even) {
+    color: red;
+    background-color: yellow;    
+}
+
+p:nth-child(odd) {
+    color: yellow;
+    background-color: red;
+}
+
+/*Selector por PSEUDOCLASES... por evento*/
+
+p:hover {
+    color: seagreen;
+}
+
+p:active {
+    background-color: blue;
+}
+
+/* con coma selecciona varios elementos por el selector*/
+
+p:nth-child(5), p:nth-child(7), section a {
+    font-size: large;
+}
+
+/*Seleccion por referencia al padre de un elemento*/
+
+section > p {
+    margin: 30px;
+}
+
+/*Selector por hermandad*/
+
+a + p {
+    padding: 30px;
+}
+
+/*Selector por hermandad inclusiva*/
+
+a ~ p {
+    padding: 130px;
+}
+
+p + a {
+    background-color: chartreuse;
+}
+
+/*Selector de todos los elementos*/
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Selector de todos lo que no son un tipo de elemento (por exclusion)*/
+
+:not(p) {
+    font-family: cursive;
+}
+
+/* Marca de importante para un atributo CSS*/
+div {
+    border-style: dotted !important;
+}
+

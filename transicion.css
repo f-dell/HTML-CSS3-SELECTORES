@@ -1,0 +1,27 @@
+body {
+    background-color: blanchedalmond;
+    font-size: 2em;
+    border: 2px blue solid;
+    border-radius: 10px;
+}
+
+#principal {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid coral;
+    /*color: rgba(255, 194, 102, 1);*/
+    /*color: hsla(34, 15, 50, 0.9);*/
+    color: hsla(30, 100%, 50%, 1);
+    padding: 15px;
+    margin: 15px auto;
+    width: 15cm;
+    border-radius: 15px;
+    box-shadow: coral 5px 5px 10px; /*Derecha, abajo, longitud de la difuminacion*/
+}
+
+#titulo {
+    text-shadow: grey 5px 5px;
+}
+
+#subtitulo {
+    text-shadow: grey 2px 2px;
+}
