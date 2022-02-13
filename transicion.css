@@ -19,25 +19,22 @@ body {
     border-radius: 0px 25px;
     box-shadow: coral 5px 5px 100px inset; /*Derecha, abajo, longitud de la difuminacion*/
     text-shadow: grey 5px 5px;
-    background: linear-gradient(top, white, blue);
     background: -webkit-linear-gradient(top, white, blue);
-    background: -moz-linear-gradient(top, white, blue);
-    background: -o-linear-gradient(top, white, blue);
-    transform: translate(100px, 300px); /*Mueve en ejes x e y para sentido inverso en ambos ejes se colocan valores negativos.*/
-    transform: rotate(45deg);
-    transform: scale(0.5, 0.5);
-    transform: skew(-30deg, -30deg); /*Perspectivo*/
-    /*Siempre afecta la ultima transformacion*/
-    /*Para que actuen todas juntas se incormporan en un solo comando*/
-    transform: translate(200px, 100px) rotate(30deg) scale(1.1, 0.5) skew(25deg, 25deg);
-    transition-property: transform 2s linear;
+    transform: translate(300px, 300px);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: .5s;
+    /*transition-timing-function: steps(5, end);*/
+    /*transition-timing-function: cubic-bezier(.15,.96,.81,-1.39);*/
+    transition: all 5000ms cubic-bezier(1.000, -0.600, 0.010, 1.485);
+    transition-timing-function: cubic-bezier(1.000, -0.600, 0.010, 1.485);
+    
+
+    
+       
 }
 
-/*#titulo {
-    text-shadow: grey 5px 5px;
-}
-
-#subtitulo {
-    text-shadow: grey 2px 2px;
+/*#subtitulo {
+    text-shadow: black 2px 2px;
 }*/
 
